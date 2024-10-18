@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="image/x-icon" href="github.webp">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Bebas Neue">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <title>Profile Background</title>
+</head>
+<body>
+    <header>
+        <h1>AARON PON GUADALQUIVER</h1>
+        <img src="medusa-admin.jpg" alt="" id="medusa">
+        <p>PROGRAMMER IT STUDENT</p>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="about">
+        <h2>About Me</h2>
+        <p>Hello, I'm an IT Programmer Student from Colegio de Montalban with experience in Commissioning for 3 years.</p>
+    </section>
+
+    <section id="projects">
+        <h2>Projects</h2>
+        <div class="project-card">
+            <h3>Barangay Rosario Community Engagement And Volunteer Platform</h3>
+            <p>Non-profit organization management for volunteers.</p>
+            <button onclick="showProjectDetails('Project 1 Details')">View Details</button>
+        </div>
+        <div class="project-card">
+            <h3>Hotel And Restaurant Management System</h3>
+            <p>Hotel Restroom for guest.</p>
+            <button onclick="showProjectDetails('Project 2 Details')">View Details</button>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <form action="/" method="post" id="contactForm">
+            <img src="contact.gif" alt="" class="contact-gif">
+            <label for="label-name" class="label-name">Name *</label>
+            <input type="text" class="input-name" name="name" placeholder="Your name" required>
+
+            <label for="label-email" class="label-email">Email *</label>
+            <input type="email" class="input-email" name="email" placeholder="Your email" required>
+
+            <label for="label-message" class="label-message">Message *</label>
+            <textarea class="input-message" name="message" placeholder="Your message" required></textarea>
+            
+            <button type="submit" id="button">Send</button>
+        </form>
+        <div class="header2">My Map Location</div>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3859.457186695868!2d121.11998158885497!3d14.6867186!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397ba34caf75255%3A0x4b3373387a49a096!2sMondello%20Homes%2C%20bankers%20avenue!5e0!3m2!1sen!2sph!4v1729229774377!5m2!1sen!2sph" width="400" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+        </section>
+    <footer>
+        <p>&copy; 2024 Medusa Programmer. All rights reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
